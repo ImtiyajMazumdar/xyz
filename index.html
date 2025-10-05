@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Imtiyaj Mazumdar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="profile-photo-container">
+        <img src="IMG_8616.jpg" alt="My Photo" class="profile-photo">
+      </div>
+      <h1>Hello, I’m <span class="highlight">Abdullah Imtiyaj Mazumdar</span></h1>
+      <p class="tagline">Data Enthusiast | ML Researcher | Visual Storyteller</p>
+      <nav class="hero-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>
+        I love turning data into stories. My current research is on **Hybrid Vision Transformers**, combining CNNs and attention to push the boundaries of image understanding.  
+        I also build dashboards, optimize SQL pipelines, and visualize data to drive decisions.
+      </p>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python / NumPy / Pandas</li>
+        <li>Machine Learning & Deep Learning (CNN, Transformer, Hybrid)</li>
+        <li>SQL & Database Optimization</li>
+        <li>Data Visualization & Dashboards</li>
+        <li>Research & Technical Writing</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Hybrid Vision Transformer</h3>
+          <p>Research combining CNN features with transformer attention for improved image classification.</p>
+        </div>
+        <div class="project-card">
+          <h3>Interactive Data Dashboard</h3>
+          <p>Designed dashboards that turn raw data into clear visual insights for decision-making.</p>
+        </div>
+        <div class="project-card">
+          <h3>SQL Optimization & Reporting</h3>
+          <p>Optimized complex SQL queries and built reporting systems for efficient data pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you. Let’s connect.</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:abdullahimtiyaj@example.com">abdullahimtiyaj@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></li>
+        <li>LinkedIn: <a href="#" target="_blank">linkedin.com/in/your-profile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Abdullah Imtiyaj Mazumdar.</p>
+  </footer>
+
+  <script>
+    // Simple fade-in-on-scroll JS
+    document.addEventListener('DOMContentLoaded', function() {
+      const faders = document.querySelectorAll('.fade-in');
+      const options = {
+        threshold: 0.2
+      };
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah I. Mazumdar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1><a href="#hero" class="logo">Abdullah I. Mazumdar</a></h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content fade-in">
+      <img src="IMG_8616.jpg" alt="Abdullah's Photo" class="profile-pic">
+      <h2>Hi — I'm <span class="highlight">Abdullah Imtiyaj Mazumdar</span></h2>
+      <h3><span id="typing-text"></span></h3>
+      <p>I turn raw data into clear insights and build machine learning solutions — currently researching 
+        <strong>Hybrid Vision Transformers</strong> that combine CNN strengths with attention mechanisms.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">See Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">&#x25BC;</div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I am a Data Analyst and ML Researcher who loves turning numbers into stories. 
+       My work bridges the gap between raw data and human understanding through visualization 
+       and cutting-edge models.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Data Visualization</div>
+      <div class="skill-card">Deep Learning</div>
+      <div class="skill-card">Transformers</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">📊 Data Visualization Dashboard</div>
+      <div class="project-card">🤖 Hybrid Vision Transformer</div>
+      <div class="project-card">📈 Predictive Analytics Models</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:mimtiyaj47@gmail.com">mimtiyaj47@gmail.com</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/ImtiyajMazumdar" target="_blank">github.com/ImtiyajMazumdar</a></p>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Abdullah I. Mazumdar | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 5d22a2a (my-portfolio)
